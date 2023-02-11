@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Overpass;
+  src: url("https://fonts.google.com/specimen/Overpass");
+}
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: white;
+  font-family: Overpass;
+}
+p {
+  font-size: 15px;
+}
+
+#Rating {
+  background-color: hsl(213, 19%, 18%);
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(0, -50%);
+  padding: 10px;
+  border-radius: 25px;
+}
+#Ratingitem .ranges {
+  display: flex;
+  flex-direction: row;
+}
+#width {
+     width: 45px;
+}
+label {
+  display: block;
+  padding: 15px;
+  position: relative;
+  padding-left: 20px;
+  color: hsl(216, 12%, 54%);
+ 
+
+}
+label input {
+  display: none;
+}
+label span {
+  background-color: hsl(213, 14%, 26%);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  overflow: hidden;
+  line-height: 1;
+  text-align: center;
+
+  border-radius: 100%;
+  font-size: 20px;
+  left: -20px;
+  top: 50%;
+
+  margin-top: -7.5px;
+}
+input:hover + span {
+     background-color:hsl(217, 12%, 63%);
+     color: white;
+}
+input:checked + span {
+  background:hsl(25, 97%, 53%) ;
+  color: white;
+}
+
+#Ratingitem {
+  margin-left: 10%;
+  margin-top: 50px;
+}
+#Ratingitem .star {
+  background-color: hsl(213, 14%, 26%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#Ratingitem .star img {
+  margin-left: 7px;
+  margin-top: 7px;
+  width: 35px;
+  height: 35px;
+}
+
+#Ratingitem p {
+  margin-top: 20px;
+  text-align: left;
+  color: hsl(216, 12%, 54%);
+}
+
+#thanksitem {
+  display: none;
+}
+.submit-btn {
+  margin-left: -20px;
+  margin-top: 50px;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  font-size: 20px;
+  color: white;
+  width: 350px;
+  height: 50px;
+  border-radius: 30px;
+}
+.submit-btn:hover {
+     color:hsl(25, 97%, 53%) ;
+     background-color: white;
+}
+#thanksitem {
+     padding: 25px;
+     text-align: center;
+}
+#thanksitem #rangedvalue {
+     background: hsl(213, 14%, 26%);
+     color:hsl(25, 97%, 53%) ;
+    padding: 15px;
+    width: 175px;
+    border-radius: 25px;
+    margin-left: 78px;
+    font-size: 15px;
+
+}
